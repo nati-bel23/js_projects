@@ -1,0 +1,120 @@
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(15, 16, 56);
+    display: flex; /* Added to help center the container */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Changed to match the fixed HTML class 'user-validation' */
+.user-validation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.user-validation form {
+    width: 90%;
+    max-width: 500px;
+    padding: 60px 30px 20px; /* Increased top padding for the icon */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* The floating user icon */
+.fas.fa-user {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #141a34;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 25px 0; /* Increased margin for better spacing */
+    position: relative;
+}
+
+.input-group label {
+    flex-basis: 30%;
+    font-weight: 600;
+    color: #333;
+}
+
+.input-group input, 
+.input-group textarea {
+    flex-basis: 70%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Transition for the bottom border */
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-bottom: 2px solid #141a34;
+}
+
+/* Error message positioning */
+.input-group span {
+    position: absolute;
+    bottom: -18px; /* Move errors below the input line */
+    right: 0;
+    font-size: 12px;
+    color: red;
+}
+
+/* Success icon color override */
+.input-group span i {
+    color: seagreen;
+}
+
+#submit-error {
+    color: red;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+form button {
+    background: #141a34;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 60px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #2a345e;
+}
+.fa-solid fa-square-check{
+    background-color: rgb(131, 238, 131);
+}
